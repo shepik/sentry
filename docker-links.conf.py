@@ -114,3 +114,15 @@ else:
 
 if SENTRY_URL_PREFIX == 'http://sentry.example.com':
     del SENTRY_URL_PREFIX
+
+if os.getenv('SERVER_EMAIL'):
+	SERVER_EMAIL = os.getenv('SERVER_EMAIL')
+
+if os.getenv('EMAIL_HOST'):
+	EMAIL_HOST = os.getenv('EMAIL_HOST')
+
+if os.getenv('SENTRY_ADMIN_EMAIL'):
+	SENTRY_ADMIN_EMAIL = os.getenv('SENTRY_ADMIN_EMAIL')
+
+if os.getenv('SENTRY_URL_PREFIX'):
+	SENTRY_URL_PREFIX = os.getenv('SENTRY_URL_PREFIX')
